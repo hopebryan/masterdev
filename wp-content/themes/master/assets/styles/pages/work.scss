@@ -1,0 +1,11 @@
+#works{
+	padding: 70px 15px;
+	background: url('../../dist/images/works-bg.jpg') no-repeat center;
+	background-attachment: fixed;
+	position: relative;
+	background-size: cover;
+	.works-wrap{
+		display: inline-block;
+		color: #fff;
+	}
+}

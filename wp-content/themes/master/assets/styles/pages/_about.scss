@@ -1,0 +1,30 @@
+#about{
+	padding: 70px 0;	
+	background: #f9f9f9;
+	background: url('../../dist/images/aboutme-bg.png') no-repeat center left;	
+	background-size: 100%;
+	.about-image{
+		position: relative;
+		padding: 10px;
+		width: 100%;
+		display: inline-block;
+		.about-image-holder{
+			width: 100%;
+			height: auto;
+			padding: 10px;
+		}
+	}
+	.about-cont{
+		position: relative;		
+		min-height: 500px;
+		margin-top:0px;
+		float: right;
+		.about-cont-wrap{
+			z-index: 50;
+			position: relative;
+		}
+		.getintouch{
+			margin-top: 35px;
+		}
+	}
+}

@@ -1,0 +1,26 @@
+#services{
+	padding: 120px 0;
+	background: url('../../dist/images/author-bg.jpg') no-repeat center;
+	background-attachment: fixed;
+	background-size: cover;
+	h2{
+		color: #fff!important;
+	}
+	.services-wrap{
+		padding: 30px;
+		text-align: center;
+		img{
+			display: inline-block;
+			margin: 0 auto;
+		}
+		.services-cont{
+			margin-top: 35px;
+		    color: #fff;
+		    display: inline-block;
+		    width: 100%;
+			h3{
+				color: #fff!important;
+			}
+		}
+	}	
+}
