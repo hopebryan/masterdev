@@ -2,54 +2,53 @@ header{
 	.navbar{
 		margin: 0;
 		border-radius: 0;
-		background-color: rgba(1, 1, 1, 0.7);
+		background: rgba(243, 229, 237, 0.9);
 		border: none;		
 		.navbar-header{
 			padding: 10px 0;
 			.navbar-brand{
 				height: auto !important;
+				width: auto;
+				display: inline-block;
+				img{
+					width: auto !important;
+					display: block;
+				}
 			}
 		}
 		.navbar-nav{
 			padding: 10px 0;
-			float: right;
-			width: auto;
-			margin-top: 20px;
+		    width: auto;
+		    float: right;
+		    margin-top: 20px;
+		    text-align: center;
+		    display: inline-block;
+		    @media(max-width: 992px){
+					width: 100%;				
+				}
 			li{
+				float: none;
+				display: inline-block;
 				&:first-child{margin-left: 0;}
 				&:last-child{margin-right: 0;}
+				@media(max-width: 992px){
+					display: block;				
+				}
 				a{
 					text-transform: uppercase;
-					font-family: $roboto;
+					font-family: $lato;
 					font-size: 16px;
+					font-weight: bold;
 					padding: 10px 25px;
-					color: $white;
+					color: $black;
 				}
-				@media(min-width: $screen-md-min) and (max-width: $screen-md-max){
-					margin-left: 66px;					
-				}
-				@media(min-width: $screen-sm-min) and (max-width: $screen-sm-max){
-					margin-left: 22px;					
+				@media(max-width: 992px){
+					margin-left: 0;					
 				}
 			}
-			.fahome a, .fabook a, .faauthor a, .faorder a, .fablog a, .facontact a{
-				&::before{
-					font-family: 'FontAwesome';
-					font-size: 16px;
-					color: $white;
-					margin-right: 5px;
-				}
-				&:hover{&::before{color: $lightgray;}}
-			}
-			.fahome a{ &::before{content: '\f015';}}
-			.fabook a{ &::before{content: '\f02d';}}
-			.faauthor a{ &::before{content: '\f007';}}
-			.faorder a{ &::before{content: '\f07a';}}
-			.fablog a{ &::before{content: '\f15c';}}
-			.facontact a{ &::before{content: '\f0e0';}}
 		}		
 	}
-	.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover{color: $lightgray !important;}
+	.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover{color: #ff8100 !important;}
 	.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover{
 		color: $lightgray !important;
 		background-color: transparent;
@@ -66,3 +65,47 @@ header{
 		}
 	}
 }
+
+.menu-secondary_menu-container, .menu-primary_menu-container{
+	text-align: center;
+}
+
+@media (max-width: 992px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+        background-color: #333;
+        top: 16px;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin-top: 7.5px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+        display:block !important;
+    }
+}
+

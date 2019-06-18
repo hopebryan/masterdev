@@ -21,7 +21,7 @@ define('WP_CACHE', true); // Added by Cache Enabler
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'masterdb');
+define('DB_NAME', 'hopetech_michelle');
 
 /** MySQL database username */
 define('DB_USER', 'root');
@@ -90,3 +90,7 @@ if ( !defined('ABSPATH') )
 
 /** Sets up WordPress vars and included files. */
 require_once(ABSPATH . 'wp-settings.php');
+
+
+
+

@@ -1,6 +1,7 @@
-#footer{
+#footer-me{
 	background: $black;
-	padding: 15px 0;
+	padding: 35px 0;
+	text-align: center;
 	p{
 		color: #FFF; 
 		margin-bottom: 0;
@@ -16,5 +17,27 @@
 				color: #FFF;
 			}
 		}
+	}
+	.footer-nav{
+		padding: 10px 0;
+    	width: auto;
+    	margin: 0px;
+    	ul{
+    		display: inline-block;
+    		width: auto;
+    		margin: 10px auto;
+    		padding: 0;
+    		li{
+    			display: inline-block;
+    			padding: 3px;
+    			margin-right: 10px;
+    			a{
+    				color: #fff;
+    			}
+    		}
+    		li:last-child{
+    			margin-right: 0px;
+    		}
+    	}
 	}
 }

@@ -1,0 +1,35 @@
+.my-gallery{
+	background: url(../../dist/images/blog-bg.png) no-repeat #fff;
+	background-size: cover;
+	.page-header {
+	    padding-bottom: 9px;
+	    margin: 55px auto 35px;
+	    border-style: none;
+	    display: block;
+	    width: 100%;
+	    position: relative;
+	    h1{
+	    	text-align: center;
+	    	font-family: $montserrat;
+			font-size: 40px;
+			font-weight: 700;
+			text-transform: uppercase;
+			margin: 10px 0 25px;
+			color: $black;
+	    }
+	}
+}
+
+.loading-bar{
+	background: transparent;
+}
+
+.menu-secondary_menu-container{
+	.navbar-nav{
+		.menu-item{
+			a{
+				color: #000!important;
+			}
+		}
+	}
+}

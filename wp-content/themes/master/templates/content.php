@@ -1,12 +1,14 @@
 <div class="row blog-post-wrap">
 	<article <?php post_class(); ?>>
 		<?php if(has_post_thumbnail()) : ?>
-		<div class="col-md-4 col-sm-4">
-			<figure class="blog-post-img">
+		<div class="col-md-12">
+			<div class="img-wrap-post">
+				<figure class="blog-post-img">
 	            <?php the_post_thumbnail(); ?>
-	        </figure>
+	        	</figure>
+	        </div>
 		</div>
-		<div class="col-md-8 col-sm-8">
+		<div class="col-md-12 blog-side-style">
 			<div class="blog-post-cont clearfix">
 				<h3><?php the_title(); ?></h3>
 				<div class="clearfix"><?php get_template_part('templates/entry-meta'); ?></div>
@@ -28,7 +30,7 @@
 			</div>
 		</div>
 		<?php else : ?>
-		<div class="col-md-12 col-sm-12">
+		<div class="col-md-12 col-sm-12  blog-side-style">
 			<div class="blog-post-cont clearfix">
 				<h3><?php the_title(); ?></h3>
 				<div class="clearfix"><?php get_template_part('templates/entry-meta'); ?></div>

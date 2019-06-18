@@ -18,6 +18,12 @@ $sage_includes = [
   'lib/customizer.php' // Theme customizer
 ];
 
+add_theme_support( 'post-thumbnails' );
+add_image_size($name, $width, $height, $cropBoolean);
+add_image_size('featuredImageCropped', 250, 200, true);
+the_post_thumbnail('featuredImageCropped');
+
+
 foreach ($sage_includes as $file) {
   if (!$filepath = locate_template($file)) {
     trigger_error(sprintf(__('Error locating %s for inclusion', 'sage'), $file), E_USER_ERROR);
@@ -26,3 +32,8 @@ foreach ($sage_includes as $file) {
   require_once $filepath;
 }
 unset($file, $filepath);
+
+
+
+
+?>

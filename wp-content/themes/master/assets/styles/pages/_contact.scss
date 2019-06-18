@@ -1,20 +1,16 @@
 #get-in-touch{
-	color: #FFF;
-	background: #31889a; /* Old browsers */
+	background: url('../../dist/images/footer-bg.jpg') no-repeat center;
+	background-size: cover;
 	position: relative;
-	padding: 90px 0 70px;
-	.map{
-		height: 100%;
-		position: relative;
-		min-height: 550px;
-		iframe{
-			width: 100% !important;
-			min-height: 550px !important;
-		}
+	padding: 50px 0;
+	@media (max-width: 425px){
+		background: url('../../dist/images/footer-bg.jpg') no-repeat top left 25%;
+		background-size: cover;
 	}
 	.contact-cont{
 		h2{
 			margin: 0 0 25px;
+			color: #f3e5ed!important;
 		}
 		.address-phone{
 			display: inline-block;
@@ -34,6 +30,9 @@
 		}
 		.social-media{
 			margin-top: 35px;
+			@media screen and (max-width:468px){
+				text-align: center;
+			}
 			ul{
 				padding: 0;
 				li{
@@ -42,36 +41,24 @@
 					text-align: center;
 					padding: 15px 0;
 					a{
-						font-family: $roboto;
-						font-size: 18px;
+						font-family: Fontawesome;
+						font-size: 35px;
 						color: #ffffff;
-						.fa-facebook, .fa-twitter{font-size: 24px;}
-						.fa-goodreads{
-							font-family: 'Arial';
-							font-size: 24px;
-							font-weight: 700;							
-						}
 						&:hover{
 							color: $yellow;
 						}
-					}
-				}
-				.lifacebook{}
-				.litwitter{margin-left: -5px;}
-				.ligoodreads{margin-left: -5px; padding: 16px 0 15px}
-				@media(max-width: 400px){
-					li{
-						display: block;
-						width: 100%;
-					}
-					.litwitter, .ligoodreads{
-						margin: -1px 0 0;
+						.fa-facebook-square, .fa-instagram{
+							font-style: normal;
+						}
 					}
 				}
 			}
 		}
 	}
 }
+
+
+
 
 .item{
 	.wpcf7-form-control-wrap{
@@ -83,3 +70,4 @@
 		}
 	}
 }
+

@@ -1,0 +1,50 @@
+#gallery{
+	background: url(../../dist/images/gallery-bg-page.jpg) no-repeat top right;
+	background-size: cover;
+	padding: 55px 0;
+	@media screen and (max-width:991px){
+		#gallery{
+			background-position-x: 0;
+		}
+	}
+	@media (max-width: 425px){
+		padding: 30px 0;
+		background: url(../../dist/images/gallery-bg-page.jpg) no-repeat top right 30%;
+		background-size: cover;
+	}
+	.gallery-content{
+		background: rgba(0,0,0, 0.7);
+		padding: 35px;
+		width: 550px;
+		@media (max-width: 768px){
+			width: 100%;
+		}
+		h2{
+			color: #fff;
+			margin-bottom: 35px;
+		}
+		.gallery-cont{
+			width: 100%;
+			display: inline-block;
+			color: #fff;
+		}
+		.getintouch{
+			position: relative;
+		    display: block;
+		    margin-top: 35px;
+		    width: auto;
+		    a{
+		    	background: transparent;
+    			border: 2px solid #fff;
+    			&:hover{
+    				background: #ff8100;
+    			}
+		    }
+		}
+		@media (max-width: 425px){
+			padding: 20px;
+		}
+	}
+}
+
+
